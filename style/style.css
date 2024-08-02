@@ -197,7 +197,7 @@ line-height: 24px;
 letter-spacing: 0.3px;
   
   }
-  /* run atyle */
+  /* run style */
   .run-container{
     width: 1060px;
     height: 371px;
@@ -358,7 +358,7 @@ margin-bottom: 58px;
 }
 .team-member {
 max-width: 1060px;
-/* height: 604px; */
+height: 604px;
 border-radius: 18px;
 background: rgba(255, 255, 255, 0.1);
 display: grid;
@@ -367,7 +367,6 @@ justify-content: space-between;
 padding: 30px 20px 0px 20px;
 }
 .member-img{
-/* position: static; */
 width: 326.67px;
 height: 272px;
 object-fit: cover;
@@ -486,7 +485,14 @@ letter-spacing: 0.3px;
 @media screen and (max-width: 576px) {
     .banner, 
     .banner-content,
-    .container{
+    .container,
+    .run-container,
+    .bmi-container,
+    .bmi-calculator,
+    .team-container,
+    .team-section,
+    .footer-content,
+    .footer-links{
       flex-direction: column;
     }
 .nav-link{
@@ -508,8 +514,65 @@ letter-spacing: 0.3px;
 display: none;
 }
 .habit-card-container{
+display: flex;
+flex-direction: column;
+gap: 150px;
+}
+.run-container{
+background: none;
+display: flex;
+flex-direction: column;
+width: auto;
+margin-top: 1300px;
+}
+
+.bmi{
+margin-top: 600px;
+text-align: center;
+
+}
+.bmi-calculator{
+width: 394px;
+height: 800px;
+background: rgb(34, 34, 34);
+gap: 0;
+margin: 20px;
+}
+.team-member{
+width: 394px;
 display: grid;
 grid-template-columns: 1fr;
-gap: 100px;
+background: none;
+padding: 0;
+gap: 0;
+margin: 0;
+position: absolute;
 }
+.img-info{
+width: 313px;
+height: 272px;
+margin: 0;
+gap: 20px;
+}
+.team-container{
+width: 394px;
+flex-direction: column;
+text-align: left;
+margin-bottom: 1100px;
+}
+.footer-content {
+display: grid;
+grid-template-columns: 1fn;
+margin: o;
+gap: 0;
+margin-bottom: 450px;
+padding: 20px;
+border-bottom: none;
+}
+.footer-copyright{
+margin: 0;
+padding: 20px;
+border-top: 2px solid rgba(255, 255, 255, 0.1);
+}
+
 }
